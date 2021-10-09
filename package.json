@@ -9,21 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@semantic-release/changelog": "^3.0.6",
-    "@semantic-release/commit-analyzer": "^6.3.3",
-    "@semantic-release/git": "^7.0.18",
-    "@semantic-release/github": "^5.5.5",
-    "@semantic-release/npm": "^5.3.4",
-    "@semantic-release/release-notes-generator": "^7.3.5",
-    "semantic-release-dotnet": "^1.0.0"
-  },
-  "peerDependencies": {
-    "semantic-release": ">=15.13.31"
-  },
-  "devDependencies": {
-    "commitizen": "^4.0.3",
-    "cz-conventional-changelog": "^3.0.2",
-    "semantic-release": "^15.13.31",
-    "xo": "^0.25.3"
+    "@semantic-release/changelog": "github:semantic-release/changelog",
+    "@semantic-release/commit-analyzer": "^9.0.1",
+    "@semantic-release/exec": "^6.0.1",
+    "@semantic-release/git": "^10.0.0",
+    "@semantic-release/release-notes-generator": "^10.0.2",
+    "semantic-release": "^18.0.0"
   }
 }
