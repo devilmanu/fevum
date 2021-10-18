@@ -18,5 +18,11 @@
         "sash.hoverBorder": "#f5d543",
         "sideBar.border": "#f5d543"
     },
-    "peacock.color": "#f3ca12"
+    "peacock.color": "#f3ca12",
+    "markdownlint.config": {
+        "MD028": false,
+        "MD025": {
+            "front_matter_title": ""
+        }
+    }
 }
