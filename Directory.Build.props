@@ -1,0 +1,25 @@
+<Project>
+  <Import Project="build/dependencies.props" />
+  <PropertyGroup Label="Package information">
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageProjectUrl>https://repo.com</PackageProjectUrl>
+    <RepositoryUrl>https://repo.com</RepositoryUrl>
+    <Authors>Manuel fernandez</Authors>
+    <Company>Castrum-tech</Company>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>true;</AllowedOutputExtensionsInPackageBuildOutputFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+  <ItemGroup>
+   <SourceRoot Include="$(MSBuildThisFileDirectory)/"/>
+	 <PackageReference Include="Microsoft.SourceLink.GitHub" Version="$(GitHubSourceLink)">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>

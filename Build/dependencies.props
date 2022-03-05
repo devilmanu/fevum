@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup Label="SDK Versions">
+    <NetFrameworkVersions>net6.0;netcoreapp3.1</NetFrameworkVersions>
+    <NetStandardVersion>netstandard21</NetStandardVersion>
+    <NetTestSdk>17.0.0</NetTestSdk>
+    <LangVersion>preview</LangVersion>
+    <GitHubSourceLink>1.1.1</GitHubSourceLink>
+  </PropertyGroup>  
+</Project>
