@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Fevum.Audits
+namespace Microsoft.Extensions.DependencyInjection
 {
-    public class DependenciInjection
+    public static class AuditBuilderExtensions
     {
         
     }
